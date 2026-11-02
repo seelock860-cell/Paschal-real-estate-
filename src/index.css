@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: auto;
+    overflow-x: clip;
+    width: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0B0B0C;
+    color: #F3F4F6;
+    overflow-x: clip;
+    width: 100%;
+    min-height: 100vh;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbars for luxury aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111113;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a30;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Gold glow and glass effects */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FDF4CD 0%, #D4AF37 50%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.15);
+}
+
+.gold-button-gradient {
+  background: linear-gradient(135deg, #DFBE56 0%, #C5A059 50%, #9F7824 100%);
+  color: #0A0A0A;
+}
+
+.gold-button-gradient:hover {
+  background: linear-gradient(135deg, #EBD074 0%, #D4AF37 50%, #B88E30 100%);
+}

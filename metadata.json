@@ -1,0 +1,6 @@
+{
+  "name": "Paschal Realty - Luxury Nigerian Properties for Rent",
+  "description": "Premier luxury real estate rental agency in Nigeria specializing in high-end houses, waterfront villas, penthouses, and serviced apartments across Lagos and Abuja.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
